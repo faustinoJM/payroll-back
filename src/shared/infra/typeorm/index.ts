@@ -5,6 +5,7 @@ import Department from "../../../modules/departments/infra/typeorm/entities/Depa
 import { Employee } from "../../../modules/employees/infra/typeorm/entities/Employee"
 import { Payroll } from "../../../modules/payrolls/infra/typeorm/entities/Payroll"
 import Position from "../../../modules/positions/infra/typeorm/entities/Position"
+import Setting from "../../../modules/settings/infra/typeorm/entities/Setting"
 
 
 const options:  any = {
@@ -18,7 +19,7 @@ const options:  any = {
     logging: true,
     synchronize: false,
     entities: [
-      User, UserTokens, Employee, Department, Position, Payroll
+      User, UserTokens, Employee, Department, Position, Payroll, Setting
         // "./src/modules/users/infra/typeorm/entities/.ts",
         // "./src/modules/appointments/infra/typeorm/entities/.ts"
 
